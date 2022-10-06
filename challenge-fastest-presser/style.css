@@ -1,3 +1,103 @@
+/* Variables */
+:root {
+  --dark-grey: #2B2D42;
+  --light-grey: #8D99AE;
+  --lighter-grey: #EDF2F4;
+  --dark-red: #D90429;
+  --light-red: #EF233C;
+  --white: #FFF;
+  --black: #000;
+  --heading-font: 'Chivo', sans-serif;
+  --body-font: 'Titillium Web', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: var(--body-font);
+}
+
 body {
   background-color: white;
+}
+
+
+
+.content {
+  display: grid;
+  grid-template-areas: "header header"
+    "start start"
+    "player1 player2";
+  gap: 1rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1em;
+  border: 1px solid var(--lighter-grey);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+h1 {
+  grid-area: header;
+  font-family: var(--heading-font);
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.game-start {
+  grid-area: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timerSet {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid var(--lighter-grey);
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.btn--play {
+  padding: 0.5em 1em;
+  margin: 1rem;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--dark-red);
+  border: 1px solid var(--dark-red);
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  border: 1px solid var(--lighter-grey);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.player1 {
+  grid-area: player1;
+}
+
+.player2 {
+  grid-area: player2;
+}
+
+.press {
+  font-size: 30px;
+  text-align: center;
+}
+
+.counter {
+  font-size: 15px;
+  text-align: center;
 }

@@ -1,0 +1,82 @@
+/* Variables */
+:root {
+    --dark-blue: #03045e;
+    --light-blue: #0077b6;
+    --turquoise: #00b4d8;
+    --lighter-blue: #90e0ef;
+    --lightest-blue: #caf0f8;
+    --white: #FFF;
+    --black: #000;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-blue);
+    font-family: var(--body-font);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em;
+}
+
+/* form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 450px;
+    padding: 2em 0.5em;
+    background-color: var(--lightest-blue);
+    border: 1px solid var(--lightest-blue);
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 0.2);
+}
+
+.post-message {
+    width: 400px;
+    height: 80px;
+    padding: 1em;
+    margin: 0.5em 1rem;
+    font-size: 0.8em;
+    border: 1px solid var(--lightest-blue);
+    border-radius: 10px;
+    resize: none;
+}
+
+.btn {
+    padding: 0.2em 0.8em;
+    margin: 0.5em 1rem;
+    font-size: 0.9em;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+.btn--post {
+    align-self: flex-end;
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+/* Tweets */
+.tweets {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 1em;
+    margin-top:1em;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 0.2);
+}
+.tweets p{
+    font-weight: 500;
+}

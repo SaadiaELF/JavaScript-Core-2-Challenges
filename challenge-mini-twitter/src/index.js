@@ -2,9 +2,9 @@ let message = document.querySelector(".post-message");
 let form = document.querySelector(".form");
 let tweetsDiv = document.querySelector(".tweets");
 let countDiv = document.querySelector(".character-counter");
-let deleteBtn;
 let time = new Date();
 let count = 0;
+let deleteBtn;
 
 function postTweet() {
   if (count >= 0) {
@@ -25,11 +25,11 @@ function postTweet() {
     tweetDiv.prepend(deleteIcon);
     tweetDiv.appendChild(timeDiv);
     tweetsDiv.appendChild(tweetDiv);
-  }
 
-  message.value = "";
-  deleteBtn = document.querySelectorAll(".delete-icon");
-  deleteBtn.forEach((btn) => btn.addEventListener("click", deleteTweet));
+    message.value = "";
+    deleteBtn = document.querySelectorAll(".delete-icon");
+    deleteBtn.forEach((btn) => btn.addEventListener("click", deleteTweet));
+  }
 }
 
 function characterCount(e) {

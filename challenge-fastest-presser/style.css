@@ -54,6 +54,12 @@ h1 {
   align-items: center;
 }
 
+#timer {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.2em;
+}
+
 #timerSet {
   font-size: 1em;
   padding: 0.5em 1em;

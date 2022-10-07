@@ -4,7 +4,6 @@
   --light-grey: #8D99AE;
   --lighter-grey: #EDF2F4;
   --dark-red: #D90429;
-  --light-red: #EF233C;
   --white: #FFF;
   --black: #000;
   --heading-font: 'Chivo', sans-serif;
@@ -63,7 +62,7 @@ h1 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.btn--play {
+.start-btn {
   padding: 0.5em 1em;
   margin: 1rem;
   font-size: 1em;
@@ -100,4 +99,15 @@ h1 {
 .counter {
   font-size: 15px;
   text-align: center;
+}
+
+.winner1, .winner2 {
+  display: none;
+}
+
+.show {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: var(--dark-red);
 }

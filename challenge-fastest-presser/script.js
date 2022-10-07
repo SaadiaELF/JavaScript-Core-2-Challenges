@@ -49,7 +49,12 @@ function keyBoardEvents(e) {
   }
 }
 
-
+function restartGame() {
+  input.value = "";
+  hideWinner(".winner");
+  clearTimeout(time);
+}
 
 startBtn.addEventListener("click", startGame);
+restartBtn.addEventListener("click", restartGame);
 document.addEventListener("keypress", keyBoardEvents);
